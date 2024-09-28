@@ -7,6 +7,14 @@ from bond_pricing.calculations import perform_regressions, create_rvm_grids
 from bond_pricing.utils import create_spread_duration_plot, get_rating_from_string
 from bond_pricing.auth import login, signup, change_password, delete_config, is_admin, load_config
 from st_aggrid import AgGrid, GridOptionsBuilder, JsCode
+import sys
+
+
+# Get the directory path to the current file
+app_dir = os.path.dirname(os.path.abspath(__file__))
+# Add the bond_pricing folder to the Python path
+sys.path.append(os.path.join(app_dir, 'bond_pricing'))
+
 
 # Set page to wide mode
 st.set_page_config(layout="wide")
