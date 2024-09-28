@@ -1,0 +1,17 @@
+Flask==2.0.2
+Werkzeug==2.0.3
+pandas
+openpyxl==3.0.7
+yfinance==0.1.55
+QuantLib-Python==1.18
+google-cloud-storage==1.42.3
+python-dateutil
+streamlit
+plotly
+requests
+openai
+numpy==1.22.4
+nest_asyncio
+gunicorn==20.1.0
+
+
