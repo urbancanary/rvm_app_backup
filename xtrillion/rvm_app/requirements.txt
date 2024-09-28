@@ -13,3 +13,4 @@ streamlit
 streamlit-aggrid
 tqdm
 urllib3
+scikit-learn
