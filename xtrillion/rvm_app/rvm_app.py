@@ -1,4 +1,7 @@
 import streamlit as st
+# Set page to wide mode
+st.set_page_config(layout="wide")
+
 import pandas as pd
 import numpy as np
 import os
@@ -9,15 +12,12 @@ from bond_pricing.auth import login, signup, change_password, delete_config, is_
 from st_aggrid import AgGrid, GridOptionsBuilder, JsCode
 import sys
 
+st.write(f"Current working directory: {os.getcwd()}")
 
 # Get the directory path to the current file
 app_dir = os.path.dirname(os.path.abspath(__file__))
 # Add the bond_pricing folder to the Python path
 sys.path.append(os.path.join(app_dir, 'bond_pricing'))
-
-
-# Set page to wide mode
-st.set_page_config(layout="wide")
 
 # Define the correct rating_num_map with proper rating strings
 rating_num_map = {
